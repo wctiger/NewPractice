@@ -52,45 +52,12 @@
     <Compile Include="Abstract\IProductRepository.cs" />
     <Compile Include="Concrete\EFProductRepository.cs" />
     <Compile Include="Entities\CustomEntities\Product.cs" />
-    <Compile Include="Entities\EFDbContext.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFDbContext.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EFDbContext.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\EFDbContext.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFDbContext.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\Product.cs">
-      <DependentUpon>EFDbContext.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Entities\EFDbContext.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Entities\EFDbContext.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EFDbContext.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Entities\EFDbContext.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EFDbContext.edmx</DependentUpon>
-      <LastGenOutput>EFDbContext.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Entities\EFDbContext.edmx.diagram">
-      <DependentUpon>EFDbContext.edmx</DependentUpon>
-    </None>
-    <None Include="Entities\EFDbContext.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EFDbContext.edmx</DependentUpon>
-      <LastGenOutput>EFDbContext.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,10 @@ namespace Models.Concrete
 
         public IEnumerable<Product> Products
         {
-            get { return _context.Products; }
+            get 
+            {
+                return _context.Products; 
+            }
         }
     }
 }

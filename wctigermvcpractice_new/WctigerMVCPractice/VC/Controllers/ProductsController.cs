@@ -13,14 +13,24 @@ namespace VC.Controllers
     {
         private readonly IProductRepository _repository;
 
-        public ProductsController()
+        public ProductsController(IProductRepository repo)
         {
-            _repository = new EFProductRepository();
+            _repository = repo;
         }
 
         public ViewResult List()
         {
-            return View(_repository.Products);
+            
+            if (_repository.Products.Any(p => p.CultureID.Trim() == "en"))
+            {
+                var englishProducts = _repository.Products.Where(p => p.CultureID.Trim().Equals("en"));
+
+                return View(englishProducts);
+            }
+            else
+            {
+                throw new Exception(_repository.Products.FirstOrDefault().CultureID);
+            }
         }
-	}
+    }
 }
