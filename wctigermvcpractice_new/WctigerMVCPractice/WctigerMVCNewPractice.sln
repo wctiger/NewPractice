@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{FC9E2DB3-49D3-4C8A-9039-BDE964DBF066}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 Domain", "Models\01 Domain.csproj", "{FC9E2DB3-49D3-4C8A-9039-BDE964DBF066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VC", "VC\VC.csproj", "{36C4F31E-0FEF-480D-9CB4-F3CC402E700C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Web UI", "VC\02 Web UI.csproj", "{36C4F31E-0FEF-480D-9CB4-F3CC402E700C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
