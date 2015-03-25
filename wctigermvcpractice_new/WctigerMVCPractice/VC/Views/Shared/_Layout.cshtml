@@ -19,6 +19,7 @@
                 </button>
                 @Html.ActionLink("Bicycle Store", "List", "Products", null, new { @class = "navbar-brand" })
             </div>
+            @Html.Action("CartSummary", "Cart");
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                 </ul>

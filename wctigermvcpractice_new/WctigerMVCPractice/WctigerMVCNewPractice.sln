@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 Domain", "Models\01 Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Web UI", "VC\02 Web UI.csproj", "{36C4F31E-0FEF-480D-9CB4-F3CC402E700C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 Utilities", "03 Utilities\03 Utilities.csproj", "{BFE569A8-95A6-4259-97F9-DF05EDF21963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 TestConsole", "04 TestConsole\04 TestConsole.csproj", "{04F669C4-E2F5-4A06-B460-A4942FE92E7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{36C4F31E-0FEF-480D-9CB4-F3CC402E700C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36C4F31E-0FEF-480D-9CB4-F3CC402E700C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36C4F31E-0FEF-480D-9CB4-F3CC402E700C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE569A8-95A6-4259-97F9-DF05EDF21963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE569A8-95A6-4259-97F9-DF05EDF21963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE569A8-95A6-4259-97F9-DF05EDF21963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE569A8-95A6-4259-97F9-DF05EDF21963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F669C4-E2F5-4A06-B460-A4942FE92E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F669C4-E2F5-4A06-B460-A4942FE92E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F669C4-E2F5-4A06-B460-A4942FE92E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F669C4-E2F5-4A06-B460-A4942FE92E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

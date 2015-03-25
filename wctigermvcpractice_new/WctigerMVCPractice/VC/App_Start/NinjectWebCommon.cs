@@ -76,6 +76,8 @@ namespace VC.App_Start
             //kernel.Bind<IProductRepository>().ToConstant(mock.Object);
 
             kernel.Bind<IProductRepository>().To<EFProductRepository>();
+            kernel.Bind<IUserRepository>().To<EFUserRepository>();
+            kernel.Bind<IAuthentication>().To<FormsAuthenticationProvider>();
         }        
     }
 }

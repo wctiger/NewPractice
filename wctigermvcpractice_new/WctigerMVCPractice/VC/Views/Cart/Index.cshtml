@@ -1,0 +1,50 @@
+﻿@model VC.UIModels.CartIndexViewModel
+<style>
+    #cartTable td {
+        vertical-align: middle;
+    }
+</style>
+@{
+    ViewBag.Title = "Bicycle Store: Your Cart";
+}
+
+<h2>CART</h2>
+
+<table id="cartTable" class="table">
+    <thead>
+        <tr>           
+            <th>Item</th>
+            <th>Model</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.Cart.Lines)
+        {
+            <tr>
+                <td class="text-center">@line.Product.Name</td>
+                <td class="text-left">@line.Product.ProductModel</td>
+                <td class="text-right">@line.Quantity</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        @Html.Hidden("productId", line.Product.ProductID);
+                        @Html.Hidden("returnUrl", Model.ReturnUrl);
+                        <input class="btn btn-sm btn-warning" type="submit" value="Remove"/>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Total Quantity</td>
+            <td class="text-right">@Model.Cart.ComputeTotalQuantity().ToString()</td>
+        </tr>
+    </tfoot>
+</table>
+<div class="text-center">
+    <a class="btn btn-primary" href="@Model.ReturnUrl">Continue Shopping</a>
+    @Html.ActionLink("Checkout", "Checkout", null, new { @class = "btn btn-primary"})
+</div>
+

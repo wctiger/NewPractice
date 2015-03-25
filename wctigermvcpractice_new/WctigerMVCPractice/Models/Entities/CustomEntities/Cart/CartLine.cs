@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace Models.Entities
 {
-    public partial class Product
+    public class CartLine
     {
-
+        public Product Product { get; set; }
+        public int Quantity { get; set; }
     }
-
-
 }
