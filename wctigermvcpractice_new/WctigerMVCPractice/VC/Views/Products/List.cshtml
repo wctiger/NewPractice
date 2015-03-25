@@ -1,16 +1,12 @@
-﻿@model IEnumerable<Models.Entities.Product>
+﻿@model VC.UIModels.ProductsListViewModel
 
-@{
-    ViewBag.Title = "List";
-}
+@using VC.CustomHtmlHelper;
 
-<h2>List</h2>
-
-@foreach (var p in Model)
+@foreach (var p in Model.Products)
 {
-    <div>
-        <h3>@p.Name</h3>
-        <h4>@p.ProductModel</h4>        
-        <p>@p.Description</p>
-    </div>
+    Html.RenderPartial("_ProductSummary", p);
 }
+
+<div class="btn-group pull-right">
+    @Html.Paging(Model.PagingInfo, x => Url.Action("List", new { productModel = Model.CurrentProductModel, page = x }))
+</div>
